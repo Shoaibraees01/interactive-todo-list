@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todos</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>My Todo List</h1>
+    </header>
+
+    <div class="card">
+      <label for="taskInput">Item</label>
+      <input type="text" id="taskInput" placeholder="What do you want to do?" />
+
+      <label for="taskDesc">Description</label>
+      <textarea id="taskDesc" placeholder="Add a short description..." rows="3"></textarea>
+
+      <button class="submit-btn" onclick="addTask()">➕ Add Task</button>
+    </div>
+
+    <div class="card">
+      <h2>Tasks</h2>
+      <table>
+        <thead style="color: white;">
+          <tr>
+            <th>Item</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="taskList" style="color: white;"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
